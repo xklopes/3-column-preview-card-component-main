@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+.body{
+  background-color: red;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10% auto;
+  width: 90rem;
+}
+
+.sedans{
+  width: 33.3%;
+  height: auto;
+  background-color: #e38826;
+  padding: 5rem;
+  border-radius: 1rem 0 0 1rem;
+}
+
+.suvs{
+  width: 33.3%;
+  height: auto;
+  background-color: #006970;
+  padding: 5rem;
+}
+
+.luxury{
+  width: 33.3%;
+  height: auto;
+  background-color: #004241;
+  padding: 5rem;
+  border-radius: 0 1rem 1rem 0;
+}
+
+.iconCars{
+  width: 7rem;
+  margin-bottom: 4rem;
+}
+
+.titles{
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 4rem;
+  color: #f2f2f2;
+  margin-bottom: 4rem;
+}
+
+.paragraphs{
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 1.5rem;
+  color: #ffffffbf;
+  margin-bottom: 8rem;
+  line-height: 3rem;
+}
+
+.buttons1{
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e38826;
+  background-color: #f2f2f2;
+  width: 15rem;
+  height: 5rem;
+  border-radius: 3rem;
+}
+
+.buttons2{
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #006970;
+  background-color: #f2f2f2;
+  width: 15rem;
+  height: 5rem;
+  border-radius: 3rem;
+}
+
+.buttons3{
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #004241;
+  background-color: #f2f2f2;
+  width: 15rem;
+  height: 5rem;
+  border-radius: 3rem;
+}
+
+@media (max-width: 375px){
+  .container{
+    flex-direction: column;
+  }
+
+  .sedans, .suvs, .luxury{
+    width: 80%;
+    height: 100rem;
+  }
+
+  .iconCars{
+    width: 20rem;
+  }
+
+  .titles{
+    font-size: 10rem;
+  }
+
+  .paragraphs{
+    font-size: 4rem;
+    line-height: 5rem;
+    margin-bottom: 15rem;
+  }
+
+  .buttons1, .buttons2, .buttons3{
+    width: 30rem;
+    height: 10rem;
+    margin-bottom: 50rem;
+    font-size: 3rem;
+  }
+
+  .sedans{
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  .luxury{
+    border-radius: 0 0 1rem 1rem;
+  }
+}
